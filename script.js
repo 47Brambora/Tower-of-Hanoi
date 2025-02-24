@@ -1,5 +1,3 @@
-alert("Tower of Hanoi\n\nRULES:\nYou can't put bigger disk on smaller.\nYou can move only 1 disk at a time.")
-
 //reprezentace veží
 let towers = {
     tower1: [],
@@ -17,7 +15,13 @@ function initGame() {
     document.querySelectorAll('td').forEach(tower => {
         tower.addEventListener('click', handleTowerClick);
     });
+    //aktualizace cobrazení věží
     updateDisplay();
+
+    //zobrazení pravidel
+    setTimeout(() => {
+        alert("Tower of Hanoi\n\nRULES:\nYou can't put bigger disk on smaller.\nYou can move only 1 disk at a time.")
+    }, 100); //krátké zpoždění pro vykreslení věží 0,1s
 }
 
 //zpracování kliknutí na vež
