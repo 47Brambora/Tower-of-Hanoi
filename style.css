@@ -12,7 +12,7 @@ body {
   text-align: center;
   border: solid 0.5dvh;
   border-radius: 2dvh;
-  margin-bottom: 2dvh;
+  margin-bottom: 1dvh;
 }
 
 img {
@@ -31,13 +31,15 @@ img {
   border: solid 0.5dvh;
   border-radius: 1dvh;
   padding: 0.5dvh;
-  width: 100dvb;
+  margin: 1dvh 0 1dvh 0;
+  width: 44dvw;
   text-align: center;
   justify-content: center;
 }
 
 .stats-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .restart-button {
