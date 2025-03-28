@@ -3,16 +3,16 @@ body {
   font-family: "Courier New", monospace;
   color: white;
   margin: 0;
-  padding: 10px;
+  padding: 0.1dvh;
   box-sizing: border-box;
   height: 100dvh;
 }
 
 .header {
   text-align: center;
-  border: solid 5px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  border: solid 0.5dvh;
+  border-radius: 2dvh;
+  margin-bottom: 2dvh;
 }
 
 img {
@@ -22,15 +22,15 @@ img {
 }
 
 .tower-images {
-  border: solid 5px;
-  border-radius: 20px;
+  border: solid 0.5dvh;
+  border-radius: 2dvh;
   display: grid;
 }
 
 .stats-container p {
-  border: solid 5px;
-  border-radius: 10px;
-  padding: 5px;
+  border: solid 0.5dvh;
+  border-radius: 1dvh;
+  padding: 0.5dvh;
   width: 100dvb;
   text-align: center;
   justify-content: center;
@@ -46,9 +46,9 @@ img {
   font-family: "Courier New", monospace;
   color: white;
   width: 100%;
-  padding: 5px;
-  border: solid 5px;
-  border-radius: 10px;
+  padding: 0.5dvh;
+  border: solid 0.5dvh;
+  border-radius: 1dvh;
 }
 
 br {
@@ -56,5 +56,5 @@ br {
 }
 
 .selected-tower {
-  background-color: rgba(0, 0, 0, 0.1); /* Ztmavení pozadí */
+  background-color: rgba(0, 0, 0, 0.1);
 }

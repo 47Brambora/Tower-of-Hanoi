@@ -1,9 +1,6 @@
-<!-- HANOJSKÉ VĚŽE - STRUKTURA HTML -->
-<!-- HLAVIČKA DOKUMENTU -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Externí styly a meta tagy -->
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,25 +8,20 @@
   </head>
 
   <body>
-    <!-- NÁZEV HRY -->
     <div class="header">
       <h1>Tower of Hanoi</h1>
     </div>
 
-    <!-- Hlavní kontejner celé aplikace -->
     <div class="main">
-      <!-- HERNÍ PLOCHA -->
       <div class="tower-images">
         <table cellspacing="0" cellpadding="0">
           <tr>
-            <!-- LEVÁ VĚŽ (PRÁZDNÁ NA ZAČÁTKU) -->
             <td id="tower1">
-              <!-- Vrchol věže -->
               <a>
                 <img src="images/vrchol.png" alt="Top_of_Tower" />
               </a>
               <br />
-              <!-- Segmenty tyče věže -->
+              ->
               <a>
                 <img src="images/prubeh.png" alt="Tower_rod" />
               </a>
@@ -59,19 +51,15 @@
               </a>
             </td>
 
-            <!-- PROSTŘEDNÍ VĚŽ (OBSAHUJE VŠECHNY DISKY) -->
             <td id="tower2">
-              <!-- Vrchol věže -->
               <a>
                 <img src="images/vrchol.png" alt="Top_of_Tower" />
               </a>
               <br />
-              <!-- Tyč věže -->
               <a>
                 <img src="images/prubeh.png" alt="Tower_rod" />
               </a>
               <br />
-              <!-- Disky od největšího (7) po nejmenší (1) -->
               <a>
                 <img src="images/disk7.png" alt="Disk_7" />
               </a>
@@ -101,14 +89,11 @@
               </a>
             </td>
 
-            <!-- PRAVÁ VĚŽ (CÍLOVÁ POZICE) -->
             <td id="tower3">
-              <!-- Vrchol věže -->
               <a>
                 <img src="images/vrchol.png" alt="Top_of_Tower" />
               </a>
               <br />
-              <!-- Segmenty tyče věže -->
               <a>
                 <img src="images/prubeh.png" alt="Tower_rod" />
               </a>
@@ -141,25 +126,18 @@
         </table>
       </div>
 
-      <!-- STATISTIKY A OVLÁDÁNÍ -->
       <div>
-        <!-- Kontejner statistik -->
         <div class="stats-container">
-          <!-- Aktuální čas hry -->
           <p>Current Time: <span id="currentTime">--:--</span></p>
-          <!-- Aktuální počet tahů -->
           <p>Current Moves: <span id="currentMoves">0</span></p>
         </div>
-        <!-- Herní ovládání -->
         <div class="game-controls">
-          <!-- Tlačítko pro restart hry -->
           <button class="restart-button" onclick="restartGame()">
             Restart Game
           </button>
         </div>
       </div>
     </div>
-    <!-- PŘIPOJENÍ HERNÍ LOGIKY -->
     <script src="script.js"></script>
   </body>
 </html>
